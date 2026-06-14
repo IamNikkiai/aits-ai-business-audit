@@ -116,8 +116,7 @@ const THANK_YOU = {
     label: "RECOMMENDED FOR YOU",
     product: "5-Day Business Proof Kit™",
     oneliner: "One task. One prompt. One real result. Every day for 5 days.",
-    price: "$17",
-    cta: "Get Started for $17 →",
+    cta: "Get Started →",
     url: "[BPK-PRODUCT-URL]",
   },
   denise: {
@@ -126,7 +125,6 @@ const THANK_YOU = {
     label: "RECOMMENDED FOR YOU",
     product: "The First Launch™",
     oneliner: "The complete system to go from idea to live product — with a real finish line.",
-    price: "$47",
     cta: "See The First Launch™ →",
     url: "[TFL-PRODUCT-URL]",
   },
@@ -136,7 +134,6 @@ const THANK_YOU = {
     label: "RECOMMENDED FOR YOU",
     product: "The First Launch™",
     oneliner: "Built for women who already have pieces in motion and need the system underneath.",
-    price: "$47",
     cta: "See The First Launch™ →",
     url: "[TFL-PRODUCT-URL]",
   },
@@ -333,7 +330,6 @@ export default function App() {
             <p className="product-card-label">{ty.label}</p>
             <p className="product-card-name">{ty.product}</p>
             <p className="product-card-oneliner">{ty.oneliner}</p>
-            <p className="product-card-price">{ty.price}</p>
             <a className="btn-cta" href={ty.url} target="_blank" rel="noopener noreferrer">
               {ty.cta}
             </a>

@@ -4,86 +4,108 @@ import './App.css';
 const QUESTIONS = [
   {
     id: 1,
-    text: 'When you think about building an AI-powered business, what\'s your honest first reaction?',
+    text: 'How long have you been trying to build an online income?',
     answers: [
-      { text: 'I have no idea where to even start.', scores: { carla: 2 } },
-      { text: 'I have ideas but I can\'t seem to finish anything.', scores: { denise: 2 } },
-      { text: 'I\'ve started — I just can\'t get traction.', scores: { angela: 2 } },
-      { text: 'I\'m excited but overwhelmed by the options.', scores: { carla: 1, denise: 1 } },
+      { text: "I'm just getting started.", scores: { carla: 2 } },
+      { text: '6–12 months, nothing launched yet.', scores: { denise: 2 } },
+      { text: 'More than a year, some attempts.', scores: { angela: 2 } },
     ],
   },
   {
     id: 2,
-    text: 'How would you describe your experience with AI tools so far?',
+    text: 'Have you ever sold a digital product or service online?',
     answers: [
-      { text: 'I\'ve tried a few things, got generic results, and quietly gave up.', scores: { carla: 2 } },
-      { text: 'I use them sometimes but I\'m inconsistent — no real system.', scores: { denise: 2 } },
-      { text: 'I use AI regularly but it\'s not connected to my business results yet.', scores: { angela: 2 } },
-      { text: 'I\'m just getting started — haven\'t really tried anything yet.', scores: { carla: 2 } },
+      { text: 'No, not yet.', scores: { carla: 2 } },
+      { text: "No, but I've built things I never launched.", scores: { denise: 2 } },
+      { text: 'Yes, a little — but nothing consistent.', scores: { angela: 2 } },
     ],
   },
   {
     id: 3,
-    text: 'What does your current digital product situation look like?',
+    text: 'How would you describe your relationship with AI tools right now?',
     answers: [
-      { text: 'I don\'t have one yet — I\'m not sure what I\'d even sell.', scores: { carla: 2 } },
-      { text: 'I have ideas and maybe a half-built thing — nothing live yet.', scores: { denise: 2 } },
-      { text: 'I have something live but it\'s not selling consistently.', scores: { angela: 2 } },
-      { text: 'I\'ve sold a little — maybe $0–$200 total lifetime.', scores: { angela: 1, denise: 1 } },
+      { text: "I've tried a few times and got nothing useful.", scores: { carla: 2 } },
+      { text: 'I use them randomly and get inconsistent results.', scores: { denise: 2 } },
+      { text: "I use AI for basic tasks but haven't built it into a real system.", scores: { angela: 2 } },
     ],
   },
   {
     id: 4,
-    text: 'What\'s the biggest thing that has stopped you from making progress?',
+    text: "What's your biggest obstacle right now?",
     answers: [
-      { text: 'I don\'t know what to build or where to start.', scores: { carla: 2 } },
+      { text: "I don't even know where to start.", scores: { carla: 2 } },
       { text: 'I start things but never finish or launch them.', scores: { denise: 2 } },
-      { text: 'I finish things but can\'t figure out how to get consistent sales.', scores: { angela: 2 } },
-      { text: 'I feel like I need more information before I can begin.', scores: { carla: 1, denise: 1 } },
+      { text: "I have products but can't get consistent sales.", scores: { angela: 2 } },
     ],
   },
   {
     id: 5,
-    text: 'How much time can you realistically dedicate to building your business right now?',
+    text: 'How much time do you realistically have for this each week?',
     answers: [
-      { text: 'Honestly, not much — maybe a few hours a week.', scores: { carla: 2 } },
-      { text: 'I have time but I end up using it on the wrong things.', scores: { denise: 2 } },
-      { text: 'I have more bandwidth than I\'ve had in years — I\'m ready to move.', scores: { angela: 2 } },
-      { text: 'I have evenings and weekends if I stay focused.', scores: { carla: 1, denise: 1 } },
+      { text: 'A few hours, evenings and weekends.', scores: { carla: 2 } },
+      { text: "I have time — that's not the problem.", scores: { denise: 2 } },
+      { text: "I have more bandwidth now and I'm ready to commit.", scores: { angela: 2 } },
     ],
   },
   {
     id: 6,
-    text: 'When you imagine having a digital product business that actually works, what does that look like?',
+    text: 'What do you need most right now?',
     answers: [
-      { text: 'An extra $500–$1,000/month that reduces financial stress.', scores: { carla: 2 } },
-      { text: 'Proof that I actually launched and sold something — validation first.', scores: { denise: 2 } },
-      { text: 'Consistent, predictable revenue — a real path to replacing my income.', scores: { angela: 2 } },
-      { text: 'Something I built myself that I\'m proud of and can grow.', scores: { carla: 1, denise: 1 } },
+      { text: 'Proof that this is actually possible for someone like me.', scores: { carla: 2 } },
+      { text: 'A forcing function that makes me actually finish something.', scores: { denise: 2 } },
+      { text: 'A system I can run consistently that compounds over time.', scores: { angela: 2 } },
     ],
   },
   {
     id: 7,
-    text: 'What\'s the most honest thing you could say about where you are right now?',
+    text: 'How do you feel about the word "techy"?',
     answers: [
-      { text: 'I\'m curious but I need to see proof this can work for someone like me.', scores: { carla: 2 } },
-      { text: 'I\'m done dabbling — I need something that forces me to finish.', scores: { denise: 2 } },
-      { text: 'I\'m almost there. I just need the system that pulls it all together.', scores: { angela: 2 } },
-      { text: 'I\'ve been collecting tools and courses for too long without results.', scores: { carla: 1, denise: 1 } },
+      { text: "That's me — I don't consider myself tech-savvy.", scores: { carla: 2 } },
+      { text: "I'm fine with tech, I just can't stick to one thing.", scores: { denise: 2 } },
+      { text: 'Tech isn\'t the issue. Execution and traction are.', scores: { angela: 2 } },
+    ],
+  },
+  {
+    id: 8,
+    text: 'How much have you spent on courses or tools in the last 12 months?',
+    answers: [
+      { text: "A little — I'm cautious because I haven't finished what I bought.", scores: { carla: 2 } },
+      { text: "$300 or more, and I've made nothing back yet.", scores: { denise: 2 } },
+      { text: "I've invested in my business — the results just haven't matched the effort.", scores: { angela: 2 } },
+    ],
+  },
+  {
+    id: 9,
+    text: 'What does success look like to you right now?',
+    answers: [
+      { text: 'An extra $500–$1,000/month to reduce financial stress.', scores: { carla: 2 } },
+      { text: 'One completed launch — I just need to prove I can do it.', scores: { denise: 2 } },
+      { text: 'Consistent revenue and a real path to replacing my income.', scores: { angela: 2 } },
+    ],
+  },
+  {
+    id: 10,
+    text: 'Finish this sentence: "What I really need is..."',
+    answers: [
+      { text: 'Someone to show me the first step and keep it simple.', scores: { carla: 2 } },
+      { text: "Something that won't let me quit before I finish.", scores: { denise: 2 } },
+      { text: "The architecture underneath the work I've already done.", scores: { angela: 2 } },
     ],
   },
 ];
 
+// Tie-breaker: Carla beats Denise, Denise beats Angela
 const getTrack = (scores) => {
   const { carla, denise, angela } = scores;
   const max = Math.max(carla, denise, angela);
-  if (angela === max) return 'angela';
+  if (carla === max) return 'carla';
   if (denise === max) return 'denise';
-  return 'carla';
+  return 'angela';
 };
 
 const RESULTS = {
   carla: {
+    label: "You're a Curious Carla",
     headline: "You're a Builder Who Hasn't Started Yet.",
     body: [
       "You're not behind. You're not incapable. You're at the beginning — and the beginning is exactly where we built something for you.",
@@ -92,14 +114,16 @@ const RESULTS = {
     callout: "You need one small, completable win that proves AI can actually work for you — before you invest more time, money, or energy into figuring this out on your own.",
   },
   denise: {
+    label: "You're a Dabbling Denise",
     headline: "You're a Builder Who Keeps Getting Stuck at the Finish Line.",
     body: [
       "You're not lazy. You're not undisciplined. You have more ideas and half-built things than most people — and zero launches to show for it.",
       "The problem isn't starting. It's finishing. And finishing requires a different kind of system than the ones you've been trying.",
     ],
-    callout: "You need a forcing function — something with a real finish line built in that makes \"almost done\" impossible to live in.",
+    callout: 'You need a forcing function — something with a real finish line built in that makes "almost done" impossible to live in.',
   },
   angela: {
+    label: "You're an Almost There Angela",
     headline: "You're a Builder Who's Almost There — and You Know It.",
     body: [
       "You've done the work. You have products. You've made some sales. But the revenue is inconsistent, the systems aren't connected, and you can't figure out if the problem is the product, the pricing, or the marketing.",
@@ -116,26 +140,26 @@ const THANK_YOU = {
     label: "RECOMMENDED FOR YOU",
     product: "5-Day Business Proof Kit™",
     oneliner: "One task. One prompt. One real result. Every day for 5 days.",
-    cta: "Get Started →",
-    url: "[BPK-PRODUCT-URL]",
+    cta: "Get the 5-Day Business Proof Kit™ →",
+    url: "https://theaitoolstack.com/product-details/product/business-proof-kit",
   },
   denise: {
     headline: "Your action plan is on its way.",
     body: "Check your inbox in the next few minutes. What you'll find isn't more information — it's a clear next move.",
     label: "RECOMMENDED FOR YOU",
-    product: "The First Launch™",
+    product: "From Folder to Listed™",
     oneliner: "The complete system to go from idea to live product — with a real finish line.",
-    cta: "See The First Launch™ →",
-    url: "[TFL-PRODUCT-URL]",
+    cta: "Get From Folder to Listed™ →",
+    url: "https://theaitoolstack.com/product-details/product/from-folder-to-listed",
   },
   angela: {
     headline: "Your action plan is on its way.",
     body: "Check your inbox in the next few minutes. You're closer than you think — the next step is about connecting what you already have.",
     label: "RECOMMENDED FOR YOU",
-    product: "The First Launch™",
+    product: "The Operator's Prompt Kit™",
     oneliner: "Built for women who already have pieces in motion and need the system underneath.",
-    cta: "See The First Launch™ →",
-    url: "[TFL-PRODUCT-URL]",
+    cta: "Get The Operator's Prompt Kit™ →",
+    url: "https://theaitoolstack.com/product-details/product/the-operators-prompt-kit",
   },
 };
 
@@ -150,12 +174,9 @@ export default function App() {
   const [submitState, setSubmitState] = useState('idle'); // idle | sending | error
   const [errorMsg, setErrorMsg] = useState('');
 
-  // Auto-advance calculating screen
   useEffect(() => {
     if (screen === 'calculating') {
-      const t = setTimeout(() => {
-        setScreen('result');
-      }, 2000);
+      const t = setTimeout(() => setScreen('result'), 2000);
       return () => clearTimeout(t);
     }
   }, [screen]);
@@ -213,7 +234,7 @@ export default function App() {
           <p className="intro-pre">Free Assessment</p>
           <h1 className="intro-headline">Find Out Exactly Where to Start.</h1>
           <p className="intro-sub">
-            7 questions. 2 minutes. A clear starting point built for where you actually are — not where you think you should be.
+            10 questions. 2 minutes. A clear starting point built for where you actually are — not where you think you should be.
           </p>
           <button className="btn-primary" onClick={() => setScreen('question')}>
             Start the Audit →
@@ -233,7 +254,7 @@ export default function App() {
       <div className="screen" style={{ justifyContent: 'flex-start', paddingTop: 40 }}>
         <div className="inner">
           <div className="progress-wrapper">
-            <p className="progress-label">Question {questionIndex + 1} of 7</p>
+            <p className="progress-label">Question {questionIndex + 1} of {QUESTIONS.length}</p>
             <div className="progress-track">
               <div className="progress-fill" style={{ width: `${progress}%` }} />
             </div>
@@ -276,7 +297,7 @@ export default function App() {
       <div className="screen" style={{ justifyContent: 'flex-start', paddingTop: 48 }}>
         <div className="inner">
           <div style={{ textAlign: 'center' }}>
-            <span className="result-badge">Your Result</span>
+            <span className="result-badge">{result.label}</span>
           </div>
           <h2 className="result-headline">{result.headline}</h2>
           {result.body.map((para, i) => (
@@ -286,7 +307,6 @@ export default function App() {
 
           <div className="divider" />
 
-          {/* Email capture */}
           <h3 className="email-headline">Where should we send your personalized action plan?</h3>
           <p className="email-sub">
             We'll send your next steps — matched to exactly where you are — straight to your inbox.
